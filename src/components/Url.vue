@@ -27,6 +27,7 @@ const ACTION_COPIED = "copied";
 export default {
   props: {
     purpose: {
+      required: true,
       validator(value) {
         return [PURPOSE_SHORTEN, PURPOSE_LENGTHEN].includes(value);
       },
